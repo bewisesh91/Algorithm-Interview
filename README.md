@@ -75,7 +75,7 @@ it's usually something more like O(10) because every key needs to go through the
 <br>
 <br>
 
-Hash tables can also take up more space. 
+Hash maps can also take up more space. 
 
 Dynamic arrays are actually fixed-size arrays that resize themselves when they go beyond their capacity. 
 
@@ -86,4 +86,20 @@ The problem is, resizing a hash table is much more expensive
 because every existing key needs to be re-hashed, and also a hash table may use an array 
 
 that is significantly larger than the number of elements stored, resulting in a huge waste of space. 
+<br>
+<br>
+
+A set is another data structure that is very similar to a hash table. 
+
+It uses the same mechanism for hashing keys into integers.
+
+The difference between a set and hash maps is that sets do not map their keys to anything. 
+
+Sets are more convenient to use when you only care about checking if elements exist. 
+
+You can add, remove, and check if an element exists in a set all in O(1).
+
+An important thing to note about sets is that they don't track frequency. 
+
+If you have a set and add the same element 100 times, the first operation adds it and the next 99 do nothing.
 
